@@ -1,0 +1,204 @@
+object AboutDialog: TAboutDialog
+  Left = 394
+  Height = 193
+  Top = 103
+  Width = 406
+  BorderStyle = bsDialog
+  Caption = 'About...'
+  ClientHeight = 193
+  ClientWidth = 406
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.0.6.0'
+  object Bevel1: TBevel
+    Left = 8
+    Height = 136
+    Top = 8
+    Width = 388
+    Anchors = [akTop, akLeft, akRight]
+    Shape = bsFrame
+  end
+  object ProgNameLabel2: TLabel
+    Left = 27
+    Height = 26
+    Top = 18
+    Width = 157
+    Caption = 'ProductName'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clAqua
+    Font.Height = -21
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object ProgNameLabel1: TLabel
+    Left = 24
+    Height = 26
+    Top = 16
+    Width = 157
+    Caption = 'ProductName'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -21
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 13
+    Top = 66
+    Width = 183
+    Caption = 'Copyright © 2013 Afreet Software, Inc.'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 13
+    Top = 86
+    Width = 37
+    Caption = 'Author: '
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Cursor = crHandPoint
+    Left = 76
+    Height = 13
+    Hint = 've3nea@dxatlas.com'
+    Top = 86
+    Width = 132
+    Caption = 'Alex Shovkoplyas, VE3NEA'
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = Label5Click
+  end
+  object Label7: TLabel
+    Left = 24
+    Height = 13
+    Top = 106
+    Width = 45
+    Caption = 'Web site:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Cursor = crHandPoint
+    Left = 76
+    Height = 13
+    Hint = 'http://www.dxatlas.com/HamVNA'
+    Top = 106
+    Width = 163
+    Caption = 'http://www.dxatlas.com/HamVNA'
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = Label6Click
+  end
+  object Label8: TLabel
+    Left = 72
+    Height = 16
+    Top = 48
+    Width = 76
+    Anchors = [akTop, akRight]
+    Caption = 'Freeware'
+    Color = clBtnFace
+    Font.Color = clFuchsia
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Image1: TImage
+    Left = 288
+    Height = 89
+    Top = 48
+    Width = 96
+  end
+  object Button1: TButton
+    Left = 304
+    Height = 25
+    Top = 152
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Cancel = True
+    Caption = '&Close'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object Label9: TLabel
+    Left = 25
+    Height = 13
+    Top = 144
+    Width = 43
+    Caption = 'Mods by:'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 25
+    Height = 13
+    Top = 164
+    Width = 34
+    Caption = 'Github:'
+    ParentColor = False
+  end
+  object Label11: TLabel
+    Cursor = crHandPoint
+    Left = 77
+    Height = 13
+    Hint = 'Mi6HQA@gmail.com'
+    Top = 144
+    Width = 121
+    Caption = 'Tomasz Kawala, Mi6HQA'
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = Label11Click
+  end
+  object Label12: TLabel
+    Cursor = crHandPoint
+    Left = 77
+    Height = 13
+    Hint = 'github.com/tomkawal/Mi6HQA'
+    Top = 164
+    Width = 147
+    Caption = 'github.com/tomkawal/Mi6HQA'
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = Label12Click
+    OnContextPopup = Label12ContextPopup
+  end
+end
